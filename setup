@@ -51,6 +51,7 @@ for path in "${paths[@]}"; do
             rm -f "$full_path"
         fi
     fi
+    chmod 600 "$path"
     ln -fs "$repo_dir"/topsecret/"$path" "$full_path"
 done
 
