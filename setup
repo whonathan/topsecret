@@ -55,4 +55,6 @@ for path in "${paths[@]}"; do
     ln -fs "$repo_dir"/topsecret/"$path" "$full_path"
 done
 
+git remote set-url origin git@github.com:whonathan/topsecret.git
+
 cd "$cur_dir"
